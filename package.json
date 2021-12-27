@@ -2,7 +2,7 @@
   "name": "page-record-mp4",
   "version": "1.0.0",
   "description": "利用 puppeteer-stream 录制页面的 MediaStream，并使用 fluent-ffmpeg 转换为 MP4 保存录制的文件",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

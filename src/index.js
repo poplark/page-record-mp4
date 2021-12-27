@@ -69,7 +69,7 @@ async function run(url = 'https://www.douyu.com/', filename = __dirname + '/reco
       // todo
       // 1. 如何在 stream 销毁时，通知 converter，并决定停止 convert
       // 2. 若 stream 销毁时，converter 仍需时间转码缓存中的数据，如何在消费完缓存中的数据后通知 main thread 完结
-      // 3. 若 converter 消费的速度赶不上 stream 生产的数据，缓存越来越多，内存是否会耗尽
+      // 3. 若 converter 消费的速度赶不上 stream 生产的数据，缓存越来越多，内存是否会耗尽 - 不会，因为背压会起作用，但反过来，会不会导致页面录制数据丢失，如何处理？
     }, 20 * 1000);
   });
 }
